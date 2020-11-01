@@ -1,0 +1,25 @@
+{
+  "name": "Game Test",
+  "short_name": "Game",
+  "description": "Game test for thesis",
+  "lang": "en-US",
+  "dir": "ltr",
+  "theme_color": "#414f57",
+  "start_url": ".",
+  "scope": ".",
+  "background_color": "#000",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/icons/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// component/card.scss
+// -----------------------------------------------------------------------------
+
+.card {
+    border-radius: 0.5em;
+    border: 0;
+    margin-bottom: 15px;
+    i {
+        font-size: 20px;
+        color: $blue;
+    }
+}
+.card-body {
+    border-bottom: 1px solid rgb(234 234 234 / 1);
+    padding: 0;
+    margin: 5px 1.25rem;
+    font-weight: 800;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .reward {
+        font-weight: 400;
+        font-size: 7px;
+        display: flex;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $red-low;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 7px;
+    }
+}
+.card-body.complete {
+    text-align: center;
+    background-color: $green-low;
+    color: white;
+    justify-content: center;
+    border: 0;
+}

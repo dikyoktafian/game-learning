@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// base/typography.scss
+// -----------------------------------------------------------------------------
+// import from google font
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap);
+
+// import from local
+
+// Roboto
+// @include fonts("Roboto", 400, "Roboto-Regular.ttf");
+// @include fonts("Roboto", 600, "Roboto-Medium.ttf");
+// @include fonts("Roboto", 800, "Roboto-Bold.ttf");
+// @include fonts("Roboto", 900, "Roboto-Black.ttf");
+
+/**
+ * Basic typography style for copy text
+ */
+
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, body{
+    font-family: Roboto;
+    font-weight: 800;
+}
+
+a {
+    color: black;
+    transition: 0.2s all;
+    &:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+button,
+input,
+textarea {
+    font-size: 12pt;
+}
+
+p {
+    font-size: 11pt;
+}

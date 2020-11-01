@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// widget/_home-card.scss
+// -----------------------------------------------------------------------------
+
+.row.cards {
+    min-height: 330px;
+    padding-bottom: 20px;
+    .card {
+        padding: 15px;
+    }
+    .title {
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    span.line {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: $red;
+    }
+}

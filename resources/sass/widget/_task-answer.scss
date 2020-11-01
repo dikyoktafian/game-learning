@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// widget/_task-answer.scss
+// -----------------------------------------------------------------------------
+
+.custom-control {
+    padding: 0;
+}
+.custom-control-label {
+    background-color: $red;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    transition: .4s all;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    &:hover {
+        cursor: pointer;
+        // background-color: darken($gray, 10%);
+    }
+    &::selection {
+        color: inherit;
+        background: transparent;
+    }
+}
+.custom-control-label::before,
+.custom-control-label::after {
+    opacity: 0;
+}
+.custom-radio.answer label {
+    background-color: $red;
+    color: white;
+    opacity: 1;
+}
+.custom-radio.active label {
+    background-color: $green;
+    color: white;
+    opacity: 1;
+}
+.container.task.detail {
+    position: relative;
+    > .row {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        z-index: 0;
+    }
+    > .row.active {
+        opacity: 1;
+        z-index: 10;
+    }
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+h1.no-img {
+    background-color: $gray;
+    color: white;
+    padding: 10px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 575px){
+    .warp-quiz {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+}

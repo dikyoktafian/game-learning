@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// base/base.scss
+// -----------------------------------------------------------------------------
+
+// Hide Scrollbar
+html {
+  box-sizing: border-box;
+}
+html, .hide-scrollbar {
+  scrollbar-width: none; // mozilla
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-size: 11pt;
+  color: $black;
+  position: relative;
+  background-color: white;
+}
+
+body:-webkit-full-screen {
+  overflow: scroll;
+}
+section {
+  position: relative;
+  padding: 20px 0;
+}
+::selection {
+  color: white;
+  background: $yellow;
+}
+:focus{
+  outline-color: $primary-color;
+}
+img {
+  // -webkit-user-drag: none;
+  // -khtml-user-drag: none;
+  // -moz-user-drag: none;
+  // -o-user-drag: none;
+  user-drag: none;
+}
+// Reset
+
+  // Input search
+  input[type="search"]::placeholder {
+    color: white;
+    text-transform: uppercase;
+  }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+  }
+
+// End - Reset
+
+@media only screen and (max-width: 991px){
+}
+@media only screen and (max-width: 767px){
+}
+@media only screen and (max-width: 575px){
+}

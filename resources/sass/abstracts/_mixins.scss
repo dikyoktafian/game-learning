@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+
+@mixin fonts($name, $weight : 300, $file:"", $style : 'normal'){
+    @font-face {
+        font-family: $name;
+        font-style: $style;
+        font-weight: $weight;
+        src: url('/fonts/#{$name}/#{$file}');
+    }
+}
+

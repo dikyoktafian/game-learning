@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// widget/_task-menu.scss
+// -----------------------------------------------------------------------------
+
+.container-question {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 0.75);
+    transition: 0.4s all;
+    opacity: 1;
+    z-index: 100;
+    .warp-question {
+        transform: translateX(0px);
+        width: 300px;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 15px;
+        height: 100%;
+        transition: 0.4s all;
+        background-color: white;
+        overflow-y: scroll;
+        .col-6 {
+            &:hover {
+                cursor: pointer;
+            }
+            &[data-complate="false"] {
+                background-color: $gray;
+            }
+            &[data-complate="true"] {
+                background-color: $green;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 135px;
+            border: 1px solid white;
+        }
+    }
+}
+.container-question.hide {
+    opacity: 0;
+    z-index: -10;
+    .warp-question {
+        transform: translateX(300px);
+    }
+}
+
+.questions-menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 12;
+    &:hover {
+        cursor: pointer;
+    }
+    span {
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: black;
+    }
+}

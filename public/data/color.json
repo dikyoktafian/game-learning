@@ -1,0 +1,18 @@
+[
+    {
+        "hex" : "#c0392b",
+        "color" : "red"
+    },
+    {
+        "hex" : "#2980b9",
+        "color" : "blue"
+    },
+    {
+        "hex" : "#f1c40f",
+        "color" : "yellow"
+    },
+    {
+        "hex" : "#2ecc71",
+        "color" : "green"
+    }
+]

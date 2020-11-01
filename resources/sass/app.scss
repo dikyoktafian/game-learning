@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+
+// 1. Configuration and helpers
+@import 
+'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins';
+
+
+// 2. Reset
+// @import 'reset/slick';
+
+
+// 2. Base stuff
+@import 
+'base/typography',
+'base/base',
+'base/helper';
+
+
+// 3. Layout-related sections
+@import 
+'layout/header',
+'layout/footer';
+
+
+// 4. Components
+@import 
+'components/badge',
+'components/button',
+'components/card';
+
+// 5. widget
+@import 
+'widget/home-user',
+'widget/home-card',
+
+'widget/task',
+
+'widget/task-menu',
+'widget/task-answer';
+
+// 6. Pages
+// @import 
+// 'pages/home';
